@@ -30,42 +30,156 @@
 // console.log(purchase(19, 100));
 // console.log(purchase(9, 100));
 
-// Задача-3
-// Напишіть функцію, яка приймає температуру (temp) в градусах Цельсія. Якщо температура нижче 0, функція повинна повернути рядок "Замерзає", якщо більше 0 але менше 25 - "Нормальна температура", якщо більше 25 - "Спекотно".
+// Задача-4
+// Напишіть функцію, яка приймає 2 числа: number та divisor. Якщо number ділиться на divisor без остатку, поверніть рядок "Ділиться", в іншому випадку поверніть "Не ділиться".
 
-// function tempTodey(temp) {
-//   switch (temp) {
-//     case if(temp <= 0):
-//       return 'Замерзає';
-//       break;
-//     case temp > 0 && temp <= 25:
-//       return 'Нормальна температура';
-//       break;
-//     case temp > 25:
-//       return 'Спекотно';
-//       break;
+// function numDivisor(number, divisor) {
+//   if (number % divisor) {
+//     return 'Не ділиться';
+//   } else {
+//     return 'Ділиться';
 //   }
 // }
 
-// 1
-// Задача-4
-// Напишіть функцію, яка приймає 2 числа: number та divisor. Якщо number ділиться на divisor без остатку, поверніть рядок "Ділиться", в іншому випадку поверніть "Не ділиться".
+// console.log(numDivisor(8, 7));
+// console.log(numDivisor(8, 3));
+// console.log(numDivisor(4, 1));
+// console.log(numDivisor(2, 7));
+
 // Задача-5
+
 // Напишіть функцію, яка приймає 2 параметри: isRaining (булевий) і hasUmbrella (булевий). Якщо дощить і у вас є парасоля, поверніть "Не змокнеш", якщо дощить і немає парасолі, поверніть "Змокнеш", в іншому випадку поверніть "Без дощу".
+
+// function rain(pisRaining, hasUmbrella) {
+//   if (pisRaining === true && hasUmbrella === true) {
+//     return 'Не змокнеш';
+//   } else if (pisRaining === true && hasUmbrella === false) {
+//     return 'Змокнеш';
+//   } else return 'Без дощу';
+// }
+
+// console.log(rain(true, false));
+// console.log(rain(true, true));
+// console.log(rain(false, false));
+// console.log(rain(false, true));
+
 // Задача-6
 // Напишіть функцію, яка приймає оцінку студента (grade) за шкалою від 0 до 100. Якщо оцінка 90 і більше, поверніть "Відмінно", від 75 до 89 - "Добре", від 50 до 74 - "Задовільно", нижче 50 - "Незадовільно".
+
+// function assessment(grade) {
+//   if (grade >= 90) {
+//     return 'Відмінно';
+//   } else if (grade >= 75) {
+//     return 'Добре';
+//   } else if (grade >= 50) {
+//     return 'Задовільно';
+//   } else return 'Незадовільно';
+// }
+
+// console.log(assessment(99));
+// console.log(assessment(90));
+// console.log(assessment(80));
+// console.log(assessment(75));
+// console.log(assessment(60));
+// console.log(assessment(40));
+
 // Задача-7
 // Напишіть функцію, яка приймає два параметри: dayOfWeek та isHoliday. Якщо dayOfWeek це "Saturday" або "Sunday" або isHoliday є true, поверніть "Вихідний", в іншому випадку поверніть "Робочий день".
-// Задача-8
-// Напишіть функцію, яка приймає один параметр year. Якщо рік ділиться на 4 і не ділиться на 100, або ділиться на 400, поверніть "Високосний рік", в іншому випадку - "Звичайний рік".
+
+// function weekend(dayOfWeek, isHoliday) {
+//   if (
+//     isHoliday === true ||
+//     dayOfWeek === 'Saturday' ||
+//     dayOfWeek === 'Sunday'
+//   ) {
+//     return 'Вихідний';
+//   } else return 'Робочий день';
+// }
+
+// console.log(weekend('Saturday', true));
+// console.log(weekend('Sunday', false));
+// console.log(weekend('Saturday', false));
+// console.log(weekend('Sunday', true));
+// console.log(weekend('Monday', true));
+// console.log(weekend('Monday', false));
+// console.log(weekend('Wednesday', false));
+// console.log(weekend('Wednesday', true));
+
 // Задача-9
 // Напишіть функцію, яка приймає два параметри: hasInvitation (булевий) і isFriend (булевий). Якщо у вас є запрошення або ви друг, поверніть "Ви запрошені", в іншому випадку поверніть "Вхід заборонено".
+
+// function wellcome(hasInvitation, isFriend) {
+//   if (hasInvitation === true || isFriend === true) {
+//     return 'Ви запрошені';
+//   } else {
+//     return 'Вхід заборонено';
+//   }
+// }
+
+// console.log(wellcome(true, false));
+// console.log(wellcome(true, true));
+// console.log(wellcome(false, true));
+// console.log(wellcome(false, false));
+
 // Задача-10
 // Напишіть функцію, яка приймає вік особи (age). Якщо вік менший за 12, поверніть "Дитина", якщо від 12 до 18, поверніть "Підліток", якщо від 18 до 60, поверніть "Дорослий", більше 60 - "Пенсіонер".
+
+// function statusAge(age) {
+//   if (age >= 60) {
+//     return 'Пенсіонер';
+//   } else if (age >= 18) {
+//     return 'Дорослий';
+//   } else if (age >= 12) {
+//     return 'Підліток';
+//   } else return 'Дитина';
+// }
+
+// console.log(statusAge(0));
+// console.log(statusAge(3));
+// console.log(statusAge(12));
+// console.log(statusAge(14));
+// console.log(statusAge(17));
+// console.log(statusAge(18));
+// console.log(statusAge(56));
+// console.log(statusAge(67));
+
 // Задача-11
-// Напишіть функцію, яка приймає два параметри: isLoggedIn (булевий) та hasAdminRights (булевий). Якщо ви увійшли в систему і маєте права адміністратора, поверніть "Адмін-сторінка", якщо увійшли, але не є адміністратором, поверніть "Користувач", в іншому випадку - "Гість".
+// Напишіть функцію, яка приймає два параметри: isLoggedIn (булевий) та hasAdminRights (булевий). Якщо ви увійшли в систему і маєте права адміністратора, поверніть "Адмін-сторінка", якщо увійшли, але не є адміністратором, поверніть "Користувач", в іншому випадку - "Користувач".
+
+// function akk(isLoggedIn, hasAdminRights) {
+//   if (isLoggedIn === true && hasAdminRights === true) {
+//     return 'Адмін-сторінка';
+//   } else if (isLoggedIn === true && hasAdminRights === false) {
+//     return 'Користувач';
+//   } else return 'Гість';
+// }
+
+// console.log(akk(true, false));
+// console.log(akk(true, true));
+// console.log(akk(false, true));
+// console.log(akk(false, false));
+
 // Задача-12
 // Напишіть функцію, яка приймає один параметр speed. Якщо швидкість менша за 60 км/год, поверніть "Безпечно", якщо від 60 до 100 км/год, поверніть "Увага", якщо більше 100 км/год, поверніть "Небезпечно".
+
+// function speedTest(speed) {
+//   if (speed <= 60) {
+//     return 'Безпечно';
+//   } else if (speed <= 100) {
+//     return 'Увага';
+//   } else return 'Небезпечно';
+// }
+
+// console.log(speedTest(20));
+// console.log(speedTest(55));
+// console.log(speedTest(60));
+// console.log(speedTest(67));
+// console.log(speedTest(100));
+// console.log(speedTest(130));
+// console.log(speedTest(170));
+
+//!!!!!!
+
 // Задача-13
 // Напишіть функцію, яка приймає два параметри: time та isWeekend. Якщо time менше 12 і це не вихідний день, поверніть "Ранок буднього дня", якщо більше 12 і менше 18 і це вихідний, поверніть "День вихідного дня", в іншому випадку поверніть "Вечір".
 // Задача-14
@@ -145,3 +259,51 @@
 // Напишіть функцію, яка приймає один параметр color. Використовуючи switch, поверніть "Теплий колір" або "Холодний колір" в залежності від кольору. Наприклад, "Red", "Orange", "Yellow" - "Теплий колір", "Blue", "Green", "Purple" - "Холодний колір".
 // Задача-51
 // Напишіть функцію, яка приймає один параметр continent. Використовуючи switch, поверніть назву континенту або "Невідомий континент" в залежності від введеного значення. Наприклад, "Africa", "Europe", "Asia", "North America", "South America", "Antarctica", "Australia" - відомі континенти, інші випадки - "Невідомий континент".
+
+// Задача-3
+// Напишіть функцію, яка приймає температуру (temp) в градусах Цельсія. Якщо температура нижче 0, функція повинна повернути рядок "Замерзає", якщо більше 0 але менше 25 - "Нормальна температура", якщо більше 25 - "Спекотно".
+
+// function tempTodey(temp) {
+//     switch (temp) {
+//       let col = temp <= 0;
+
+//     console.log(col);
+//     case :
+//       console.log('Замерзає');
+//       break;
+//     case temp >= 25:
+//       console.log('Спекотно');
+//       break;
+//     default:
+//       console.log('Нормальна температура');
+//   }
+// }
+
+// console.log(tempTodey(-39));
+// console.log(tempTodey(-3));
+// console.log(tempTodey(0));
+
+// console.log(tempTodey(3));
+// console.log(tempTodey(27));
+// console.log(tempTodey(+5));
+
+// Задача-8
+// Напишіть функцію, яка приймає один параметр year. Якщо рік ділиться на 4 і не ділиться на 100, або ділиться на 400, поверніть "Високосний рік", в іншому випадку - "Звичайний рік".
+
+// function leapYear(year) {
+//   let four = year % 4 === true;
+//   let hundred = year % 100 !== true;
+//   let fourhundred = year % 100 === true;
+
+//   console.log(four);
+//   console.log(hundred);
+//   console.log(fourhundred);
+// }
+
+// console.log(leapYear(2020));
+// console.log(leapYear(2021));
+// console.log(leapYear(2022));
+// console.log(leapYear(2023));
+// console.log(leapYear(2024));
+// console.log(leapYear(2025));
+// console.log(leapYear(2026));
