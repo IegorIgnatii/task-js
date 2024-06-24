@@ -47,13 +47,7 @@
 //   }
 // }
 
-console.log(tempTodey(-21));
-console.log(tempTodey(-1));
-console.log(tempTodey(0));
-console.log(tempTodey(1));
-console.log(tempTodey(25));
-console.log(tempTodey(+1));
-console.log(tempTodey(35));
+// 1
 // Задача-4
 // Напишіть функцію, яка приймає 2 числа: number та divisor. Якщо number ділиться на divisor без остатку, поверніть рядок "Ділиться", в іншому випадку поверніть "Не ділиться".
 // Задача-5
