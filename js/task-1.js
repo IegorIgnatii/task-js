@@ -296,29 +296,26 @@
 // console.log(numZero(1));
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 // Задача-29
 // Напишіть функцію, яка приймає два параметри str1 та str2.Функція повинна повернути булеве значення true, якщо остання літера str1 є голосною(a, e, i, o, u).В іншому випадку функція повинна повернути булеве значення false.
 
-// Задача-30
-// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є кратним 10. В іншому випадку функція повинна повернути булеве значення false.
-
-// Задача-16
-// Напишіть функцію, яка приймає масив arr(масив чисел).Функція повинна повернути булеве значення true, якщо arr містить хоча б одне негативне число.В іншому випадку функція повинна повернути булеве значення false.
-
-// function negativeNumber([arr]) {}
-
-// console.log(negativeNumber([1, 2, 3, -2]));
-
-// console.log(negativeNumber([1, 2, 3, 4]));
-
-// console.log(negativeNumber([1, 2, 3, -4]));
-
-// Задача-17
-// Напишіть функцію, яка приймає рядок str.Функція повинна повернути булеве значення true, якщо перша літера str є голосною(a, e, i, o, u).В іншому випадку функція повинна повернути булеве значення false.
+// function lastVowel(str) {
+//   let strres = 'aeiou';
+//   if (strres.includes(str[str.length - 1])) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(lastVowel('uoa'));
+// console.log(lastVowel('uol'));
+// console.log(lastVowel('rok'));
+// console.log(lastVowel('aok'));
+// console.log(lastVowel('uoo'));
 
 // function firstVowel(str) {
-//   if (str[0] === a || e || i || o || u) {
+//   let strres = 'aeiou';
+//   if (strres.includes(str[0])) {
 //     return true;
 //   } else {
 //     return false;
@@ -329,11 +326,47 @@
 // console.log(firstVowel('aok'));
 // console.log(firstVowel('uok'));
 
+// Задача-30
+// Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є кратним 10. В іншому випадку функція повинна повернути булеве значення false.
+
+// function divTen(num) {
+//   if (num % 10) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// console.log(100);
+// console.log(99);
+// console.log(1700);
+// console.log(19);
+
+// Задача-16
+// Напишіть функцію, яка приймає масив arr(масив чисел).Функція повинна повернути булеве значення true, якщо arr містить хоча б одне негативне число.В іншому випадку функція повинна повернути булеве значення false.
+
+// function negativeNumber(arr) {
+//   for (const iterator of arr) {
+//     if (iterator < 0) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(negativeNumber([1, 2, 3, -2]));
+
+// console.log(negativeNumber([1, 2, 3, 4]));
+
+// console.log(negativeNumber([1, -2, 3, 4]));
+
+// Задача-17
+// Напишіть функцію, яка приймає рядок str.Функція повинна повернути булеве значення true, якщо перша літера str є голосною(a, e, i, o, u).В іншому випадку функція повинна повернути булеве значення false.
+
 // Задача-21
 // Напишіть функцію, яка приймає рядок str.Функція повинна повернути булеве значення true, якщо довжина str є парною.В іншому випадку функція повинна повернути булеве значення false.
 
 // function longDouble(str) {
-//   if (str.lenght % 2) {
+//   if (str.length % 2 === 0) {
 //     return true;
 //   } else {
 //     return false;
@@ -349,10 +382,10 @@
 // Напишіть функцію, яка приймає два параметри num1 та num2.Функція повинна повернути булеве значення true, якщо num1 ділиться на 2, а num2 не ділиться на 2. В іншому випадку функція повинна повернути булеве значення false.
 
 // function division(num1, num2) {
-//   if (num1 % 2 && num2 % 2) {
-//     return false;
-//   } else {
+//   if (num1 % 2 === 0 && num2 % 2 !== 0) {
 //     return true;
+//   } else {
+//     return false;
 //   }
 // }
 
@@ -365,10 +398,10 @@
 // Напишіть функцію, яка приймає число num.Функція повинна повернути булеве значення true, якщо num більше 100, але менше 200. В іншому випадку функція повинна повернути булеве значення false.
 
 // function numberResult(num) {
-//   if (num > 100 && nam < 200) {
-//     return false;
-//   } else {
+//   if (num > 100 && num < 200) {
 //     return true;
+//   } else {
+//     return false;
 //   }
 // }
 
@@ -380,8 +413,11 @@
 // Напишіть функцію, яка приймає два параметри num1 та num2.Функція повинна повернути булеве значення true, якщо різниця між num1 та num2 більше 50. В іншому випадку функція повинна повернути булеве значення false.
 
 // function moreFifty(num1, num2) {
-
+//   if (num1 - num2 > 50) {
+//     return true;
+//   }
+//   return false;
 // }
-// console.log(moreFifty(45, 70));
+// console.log(moreFifty(450, 70));
 // console.log(moreFifty(-45, 70));
 // console.log(moreFifty(45, 170));

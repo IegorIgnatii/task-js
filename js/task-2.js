@@ -182,20 +182,112 @@
 
 // Задача-13
 // Напишіть функцію, яка приймає два параметри: time та isWeekend. Якщо time менше 12 і це не вихідний день, поверніть "Ранок буднього дня", якщо більше 12 і менше 18 і це вихідний, поверніть "День вихідного дня", в іншому випадку поверніть "Вечір".
+
+// function isDoba(time, isWeeken) {
+//   if (time < 12 && isWeeken === false) {
+//     return 'Ранок буднього дня';
+//   } else if (time > 12 && time < 18 && isWeeken === true) {
+//     return 'День вихідного дня';
+//   } else return 'Вечір';
+// }
+
+// console.log(isDoba(12, false));
+// console.log(isDoba(1, true));
+// console.log(isDoba(15, false));
+// console.log(isDoba(15, true));
+// console.log(isDoba(8, false));
+// console.log(isDoba(15, true));
+
 // Задача-14
 // Напишіть функцію, яка приймає два параметри: hasGlutenAllergy (булевий) та containsGluten (булевий). Якщо у вас є алергія на глютен і продукт містить глютен, поверніть "Не можна їсти", в іншому випадку поверніть "Можна їсти".
+
+// function isGluten(hasGlutenAllergy, containsGluten) {
+//   if (hasGlutenAllergy === true && containsGluten === true) {
+//     return 'Не можна їсти';
+//   } else return 'Можна їсти';
+// }
+
+// console.log(isGluten(true, false));
+// console.log(isGluten(true, true));
+// console.log(isGluten(false, true));
+// console.log(isGluten(false, false));
+
 // Задача-15
 // Напишіть функцію, яка приймає один параметр age. Якщо вік менше 18, поверніть "Не можна купувати алкоголь", якщо 18 або більше, поверніть "Можна купувати алкоголь".
+
+// function alko(age) {
+//   if (age >= 18) {
+//     return 'Можна купувати алкоголь';
+//   } else return 'Не можна купувати алкоголь';
+// }
+
+// console.log(alko(15));
+// console.log(alko(19));
+// console.log(alko(55));
+
 // Задача-16
 // Напишіть функцію, яка приймає один параметр isSunny (булевий). Якщо сонячно, поверніть "Вийдемо на прогулянку", якщо ні, поверніть "Залишимося вдома".
+
+// function isMotion(isSunny) {
+//   if (isSunny === true) {
+//     return 'Вийдемо на прогулянку';
+//   } else return 'Залишимося вдома';
+// }
+
+// console.log(isMotion(true));
+// console.log(isMotion(false));
+// console.log(isMotion(true));
+
 // Задача-17
 // Напишіть функцію, яка приймає один параметр number. Якщо число парне, поверніть "Парне", якщо непарне, поверніть "Непарне".
+
+// function duble(num) {
+//   if (num % 2 === 0) {
+//     return 'Парне';
+//   } else return 'Непарне';
+// }
+
+// console.log(duble(33));
+// console.log(duble(44));
+// console.log(duble(55));
+
 // Задача-18
 // Напишіть функцію, яка приймає два параметри: password та confirmPassword. Якщо ці два паролі однакові, поверніть "Паролі збігаються", якщо ні, поверніть "Паролі не збігаються".
+
+// function passwordCheck(password, confirmPassword) {
+//   if (password === confirmPassword) {
+//     return 'Паролі збігаються';
+//   } else return 'Паролі не збігаються';
+// }
+
+// console.log(passwordCheck('qwerty', 'qwerty'));
+// console.log(passwordCheck('qwerty', 'qworty'));
+// console.log(passwordCheck('qwerfy', 'qwerty'));
+
 // Задача-19
 // Напишіть функцію, яка приймає один параметр temperature в градусах Цельсія. Якщо температура нижче 0, поверніть "Зима", якщо від 0 до 15, поверніть "Весна", якщо від 16 до 25, поверніть "Літо", якщо більше 25, поверніть "Осінь".
+
+// function seasons(temperature) {
+//   if (temperature < 0) {
+//     return 'Зима';
+//   } else if (temperature < 15) {
+//     return 'Весна';
+//   } else if (temperature < 25) {
+//     return 'Літо';
+//   } else return 'Осінь';
+// }
+
+// console.log(seasons(-1));
+// console.log(seasons(4));
+// console.log(seasons(8));
+// console.log(seasons(50));
+// console.log(seasons(8));
+// console.log(seasons(17));
+// console.log(seasons(29));
+
 // Задача-20
 // Напишіть функцію, яка приймає два параметри: number1 та number2. Якщо number1 більше number2, поверніть "Перше більше", якщо менше, поверніть "Перше менше", якщо рівні, поверніть "Рівні".
+
 // Задача-21
 // Напишіть функцію, яка приймає один параметр isBatteryFull (булевий). Якщо акумулятор повний, поверніть "Не потрібно заряджати", якщо ні, поверніть "Заряджати".
 // Задача-22
@@ -264,20 +356,12 @@
 // Напишіть функцію, яка приймає температуру (temp) в градусах Цельсія. Якщо температура нижче 0, функція повинна повернути рядок "Замерзає", якщо більше 0 але менше 25 - "Нормальна температура", якщо більше 25 - "Спекотно".
 
 // function tempTodey(temp) {
-//     switch (temp) {
-//       let col = temp <= 0;
+//     if (condition) {
 
-//     console.log(col);
-//     case :
-//       console.log('Замерзає');
-//       break;
-//     case temp >= 25:
-//       console.log('Спекотно');
-//       break;
-//     default:
-//       console.log('Нормальна температура');
+//     }  else if (condition) {
+
+//     } else
 //   }
-// }
 
 // console.log(tempTodey(-39));
 // console.log(tempTodey(-3));
@@ -291,13 +375,12 @@
 // Напишіть функцію, яка приймає один параметр year. Якщо рік ділиться на 4 і не ділиться на 100, або ділиться на 400, поверніть "Високосний рік", в іншому випадку - "Звичайний рік".
 
 // function leapYear(year) {
-//   let four = year % 4 === true;
-//   let hundred = year % 100 !== true;
-//   let fourhundred = year % 100 === true;
+//   let four = year % 4 === 0;
+//   let hundred = year % 100 !== 0;
+//   let fourhundred = year % 400 === 0;
 
-//   console.log(four);
-//   console.log(hundred);
-//   console.log(fourhundred);
+//   let isleapYear = (four && hundred) || fourhundred;
+//   return isleapYear ? 'Високосний рік' : 'Звичайний рік';
 // }
 
 // console.log(leapYear(2020));
