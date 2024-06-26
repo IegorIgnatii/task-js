@@ -1,21 +1,40 @@
+/**
+ * Методи масиву
+ *
+ * - join
+ * - split
+ * - slice
+ * - concat
+ * - indexOf
+ * - push/pop
+ */
+
 // # Масиви
 
 // ## Прості задачі
 
 // 1. Напиши функцію, яка приймає масив та виводить кожен елемент масиву у консоль.
 
-// function task1(arr) {
-//   for (let index = 0; index < arr.length; index++) {
-//     return index;
-//   }
-// }
+function logIterator(arr) {
+  for (const iterator of arr) {
+    return iterator;
+  }
+}
 
-// console.log(task1([1, 2, 3, 4, 5]));
-// console.log(task1([1, 2, 3, 4, 6]));
-// console.log(task1([1, 2, 3, 4, 15]));
+console.log(logIterator([1, 2, 3, 4, 5, 6]));
 
 // 1. Напиши функцію, яка приймає масив та виводить кожен парний елемент масиву у
 //    консоль.
+
+// function task1(arr) {
+//   const res = arr.join();
+//   console.log(res);
+// }
+
+// console.log(task2(1, 2, 3, 4, 5));
+// console.log(task2([1, 2, 3, 4, 6]));
+// console.log(task2([1, 2, 3, 4, 15]));
+
 // 1. Напиши функцію, яка приймає масив чисел та виводить лише парні числа у
 //    консоль.
 // 1. Напиши функцію, яка приймає два параметри (arr, max). Де arr - це масив
