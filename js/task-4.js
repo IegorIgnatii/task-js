@@ -5,60 +5,76 @@
 // Створення об'єкта: Створіть об'єкт person, який містить властивості ім'я, вік та
 // професія.
 
-const person = {
-  name: 'Nico',
-  age: 33,
-  job: 'developer',
-};
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
 
 // Доступ до властивостей: Виведіть на консоль ім'я створеного об'єкта person.
-person.name = 'Ivan';
-console.log(person.name);
+// person.name = 'Ivan';
+// console.log(person.name);
 
 // Зміна властивостей: Змініть вік в об'єкті person на нове значення.
 
-person.age++;
-console.log(person.age);
+// person.age++;
+// console.log(person.age);
 
 // Додавання нових властивостей: Додайте до об'єкта person властивість місце_роботи
 // зі значенням.
 
-person.corp = 'Google';
-console.log(person.corp);
+// person.corp = 'Google';
+// console.log(person.corp);
 
 // Видалення властивостей: Видаліть властивість професія з об'єкта person.
 
-delete person.job;
+// delete person.job;
 
-console.log(person);
+// console.log(person);
 
 // Пошук властивостей: Перевірте, чи існує властивість професія в об'єкті person.
 
-console.log(person.hasOwnProperty(job));
+// const hav = person.hasOwnProperty('job');
+
+// console.log(hav);
 
 // Зведення декількох об'єктів: Створіть ще один об'єкт friend, який містить
 // інформацію про вашого друга. Потім об'єднайте властивості об'єкта friend з
 // об'єктом person.
 
-const friend = {
-  name: 'Anna',
-  age: 23,
-  job: 'SEO',
-};
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+// };
 
 // Перебір властивостей: Виведіть всі властивості об'єкта person на консоль у
 // вигляді ключ-значення.
 
-for (const keys of person) {
-  return keys;
-}
-console.log(person.keys);
+// const allVal = Object.values(person);
+
+// console.log(allVal);
 
 // Методи об'єкта: Додайте до об'єкта person метод привітання, який буде виводити
 // вітання з іменем особи.
 
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+//   hello() {
+//     return `Hello ${this.name}`;
+//   },
+// };
+
+// console.log(person.hello());
+
 // Застосування Object.keys(): Виведіть на консоль масив зі всіма ключами об'єкта
 // person за допомогою функції Object.keys().
+
+// const allVal = Object.keys(person);
+
+// console.log(allVal);
 
 // ---
 
@@ -68,6 +84,15 @@ console.log(person.keys);
 // Напиши функцію, яка створює об'єкт з ім'ям і віком.
 // Функція повинна приймати два аргументи: ім'я (рядок) і вік (число).
 // Поверни цей об'єкт.
+
+// function creatObg(name, age) {
+//   const obg = { name, age };
+//   return obg;
+// }
+
+// console.log(creatObg('Микола', 25));
+// console.log(creatObg('Сергій', 28));
+// console.log(creatObg('Євген', 22));
 // ```
 
 // ---
@@ -76,6 +101,11 @@ console.log(person.keys);
 // Напиши функцію, яка приймає об'єкт і додає до нього нову властивість "address" (рядок).
 // Поверни оновлений об'єкт.
 // ```
+function newObg(obg) {}
+
+console.log(creatObg('Микола', 25));
+console.log(creatObg('Сергій', 28));
+console.log(creatObg('Євген', 22));
 
 // ---
 
