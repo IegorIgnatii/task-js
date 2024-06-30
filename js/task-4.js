@@ -96,17 +96,25 @@
 // ```
 
 // ---
-
+// ```
+//!!!!!!
 // ```
 // Напиши функцію, яка приймає об'єкт і додає до нього нову властивість "address" (рядок).
 // Поверни оновлений об'єкт.
-// ```
-function newObg(obg) {}
 
-console.log(creatObg('Микола', 25));
-console.log(creatObg('Сергій', 28));
-console.log(creatObg('Євген', 22));
+// const obg = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
 
+// function newObg(obg) {
+//   obg.address = 'Google';
+//   return obg;
+// }
+
+// console.log(newObg);
+//!!!!!!!!
 // ---
 
 // ```
@@ -115,6 +123,21 @@ console.log(creatObg('Євген', 22));
 // Поверни оновлений об'єкт.
 // ```
 
+// const obg = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
+
+// function newAge(nage) {
+//   obg.age = nage;
+//   return obg;
+// }
+
+// console.log(newAge(38));
+// console.log(newAge(55));
+// console.log(newAge(17));
+
 // ---
 
 // ```
@@ -122,24 +145,106 @@ console.log(creatObg('Євген', 22));
 // Поверни оновлений об'єкт.
 // ```
 
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
+
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+// };
+
+// function delAge(obg) {
+//   delete obg.age;
+//   return obg;
+// }
+
+// console.log(delAge(person));
+
+// console.log(delAge(friend));
+
 // ---
 
 // ```
 // Напиши функцію, яка приймає об'єкт і повертає значення властивості "name".
 // ```
 
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
+
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+// };
+
+// function obgName(obg) {
+//   return obg.name;
+// }
+
+// console.log(obgName(friend));
+// console.log(obgName(person));
 // ---
 
 // ```
 // Напиши функцію, яка приймає об'єкт і повертає true, якщо властивість "address" існує в об'єкті, і false, якщо ні.
 // ```
 
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
+
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+//   address: 'Lviv',
+// };
+
+// function havAdd(obg) {
+//   return obg.hasOwnProperty('address');
+// }
+
+// console.log(havAdd(friend));
+// console.log(havAdd(person));
+
 // ---
 
+//!!!!!!!!!!!!!!!!!!!!!
 // ```
 // Напиши функцію, яка приймає два об'єкти і об'єднує їх в один.
 // Якщо у об'єктів є однакові властивості, значення другого об'єкта мають замінити значення першого.
 // Поверни результат.
+
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
+
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+//   address: 'Lviv',
+// };
+
+// function comObg(obg1, obg2) {
+//   const bigobg = {};
+
+// }
+
+// console.log(comObg(friend, person));
+// console.log(comObg(person, friend));
+
 // ```
 
 // ---
@@ -150,29 +255,104 @@ console.log(creatObg('Євген', 22));
 // Поверни об'єкт.
 // ```
 
-// ---
+// function crNewObg(name, age, address) {
+//   const obg = { name: name, age: age, address };
+//   return obg;
+// }
 
+// console.log(crNewObg('Yalta'));
+// // ---
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // ```
 // Напиши функцію, яка приймає об'єкт та нові значення для імені та віку. Функція повинна змінити обидві властивості в об'єкті. Поверни оновлений об'єкт.
 // ```
 
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
+
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+//   address: 'Lviv',
+// };
+
+// function NewValObg(obg, newAge, newName) {
+//   obg.name = newName;
+//   obg.age = newAge;
+//   return obg;
+// }
+
+// console.log(NewValObg(friend, 44, 'Alex'));
+// console.log(NewValObg(person, 14, 'Fred'));
 // ---
 
 // ```
 // Напиши функцію, яка приймає об'єкт та нову властивість "email" (якщо її немає).
 // Якщо в об'єкті вже є "email", нічого не роби.
 // Поверни оновлений об'єкт.
+
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+//   email: 'Nico@gmail.com',
+// };
+
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+//   address: 'Lviv',
+// };
+
+// function emailObg(obg, email) {
+//   if (obg.hasOwnProperty('email')) {
+//     return obg;
+//   } else {
+//     obg.email = email;
+//     return obg;
+//   }
+// }
+
+// console.log(emailObg(person, 'Nicolai@ukr.net'));
+// console.log(emailObg(friend, 'Lama@ukr.net'));
+
 // ```
 
 // ---
-
+//!!!!!!!!!!!!!!!!!1
 // ```
 // Напиши функцію, яка приймає об'єкт і змінює тип значення властивості "age" з числа на рядок.
 // Поверни оновлений об'єкт.
 // ```
 
-// ---
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+//   email: 'Nico@gmail.com',
+// };
 
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+//   address: 'Lviv',
+// };
+
+// function ageNoNum(obg) {
+//   obg.age =
+// }
+
+// console.log(ageNoNum(friend));
+// console.log(ageNoNum(person));
+
+// ---
+//!!!!!!!!!!!!!!!!!
 // ```
 // Напиши функцію, яка приймає об'єкт і змінює значення властивості "address", але тільки якщо ця властивість вже існує.
 // Якщо її немає, поверни об'єкт без змін.

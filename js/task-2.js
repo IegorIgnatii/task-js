@@ -178,8 +178,6 @@
 // console.log(speedTest(130));
 // console.log(speedTest(170));
 
-
-
 // Задача-13
 // Напишіть функцію, яка приймає два параметри: time та isWeekend. Якщо time менше 12 і це не вихідний день, поверніть "Ранок буднього дня", якщо більше 12 і менше 18 і це вихідний, поверніть "День вихідного дня", в іншому випадку поверніть "Вечір".
 
@@ -288,8 +286,35 @@
 // Задача-20
 // Напишіть функцію, яка приймає два параметри: number1 та number2. Якщо number1 більше number2, поверніть "Перше більше", якщо менше, поверніть "Перше менше", якщо рівні, поверніть "Рівні".
 
+// function twoNumbers(number1, number2) {
+//   if (number1 > number2) {
+//     return 'Перше більше';
+//   } else if (number1 < number2) {
+//     return 'Перше менше';
+//   } else return 'Рівні';
+// }
+
+// console.log(twoNumbers(2, 5));
+// console.log(twoNumbers(2, 1));
+// console.log(twoNumbers(2, 2));
+// console.log(twoNumbers(5, 5));
+// console.log(twoNumbers(25, 35));
+// console.log(twoNumbers(21, 25));
+// console.log(twoNumbers(25, 25));
+
 // Задача-21
 // Напишіть функцію, яка приймає один параметр isBatteryFull (булевий). Якщо акумулятор повний, поверніть "Не потрібно заряджати", якщо ні, поверніть "Заряджати".
+
+// function battarey(isBatteryFull) {
+//   if (isBatteryFull === true) {
+//     return 'Не потрібно заряджати';
+//   } else {
+//     return 'Заряджати';
+//   }
+// }
+
+// console.log(battarey(false));
+// console.log(battarey(true));
 // Задача-22
 // Напишіть функцію, яка приймає два параметри: isStudent (булевий) та hasID (булевий). Якщо ви студент і маєте посвідчення, поверніть "Вхід дозволено", якщо ні, поверніть "Вхід заборонено".
 // Задача-23
@@ -356,12 +381,12 @@
 // Напишіть функцію, яка приймає температуру (temp) в градусах Цельсія. Якщо температура нижче 0, функція повинна повернути рядок "Замерзає", якщо більше 0 але менше 25 - "Нормальна температура", якщо більше 25 - "Спекотно".
 
 // function tempTodey(temp) {
-//     if (condition) {
-
-//     }  else if (condition) {
-
-//     } else
-//   }
+//   if (temp < 0) {
+//     return 'Замерзає';
+//   } else if (temp > 0 && temp < 25) {
+//     return 'Нормальна температура';
+//   } else return 'Спекотно';
+// }
 
 // console.log(tempTodey(-39));
 // console.log(tempTodey(-3));

@@ -16,8 +16,11 @@
 // 1. Напиши функцію, яка приймає масив та виводить кожен елемент масиву у консоль.
 
 function logIterator(arr) {
-  for (const iterator of arr) {
-    return iterator;
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+  }
+  {
+    return element;
   }
 }
 
