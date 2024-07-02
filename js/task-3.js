@@ -69,13 +69,22 @@
 // 1. Напиши функцію яка приймає масив та елемент для пошуку. Фукнція повинна
 //    порахувати скільки разів шуканий елемент зустрічається у масиві.
 
-const searchElement = (arr, item) => {
-  return;
-};
+//!!!!!!!!!!
+//   return tags.reduce((acc, tag) => {
+//     return { ...acc, [tag]: acc[tag] ? acc[tag] + 1 : 1 };
+//   }, {});
+// }
 
-console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 7));
-console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 8));
-console.log(searchElement([1, 2, 2, 2, 2, 2, 5, 8, 8, 6, 7, 8], 2));
+// const searchElement = (arr, element) => {
+//   return arr.reduce((acc, item) => { return { ...acc, item ? item + 1: 1 };
+// }
+// ;
+
+// console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 7));
+// console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 8));
+// console.log(searchElement([1, 2, 2, 2, 2, 2, 5, 8, 8, 6, 7, 8], 2));
+
+//!!!!!!!!!!
 
 // 1. Напиши функцію яка приймає масив чисел. Функція повинна видалити усі
 //    негативні(відємні числа) з масиву та повернути новий масив.
