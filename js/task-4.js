@@ -267,28 +267,27 @@
 // Напиши функцію, яка приймає об'єкт та нові значення для імені та віку. Функція повинна змінити обидві властивості в об'єкті. Поверни оновлений об'єкт.
 // ```
 
-// const person = {
-//   name: 'Nico',
-//   age: 33,
-//   job: 'developer',
-// };
+const person = {
+  name: 'Nico',
+  age: 33,
+  job: 'developer',
+};
 
-// const friend = {
-//   name: 'Anna',
-//   age: 23,
-//   job: 'SEO',
-//   address: 'Lviv',
-// };
+const friend = {
+  name: 'Anna',
+  age: 23,
+  job: 'SEO',
+  address: 'Lviv',
+};
 
-// function NewValObg(obg, newAge, newName) {
-//   obg.name = newName;
-//   obg.age = newAge;
-//   return obg;
-// }
+function NewValObg(obg, newAge, newName) {
+  obg.name = newName;
+  obg.age = newAge;
+  return obg;
+}
 
-// console.log(NewValObg(friend, 44, 'Alex'));
-// console.log(NewValObg(person, 14, 'Fred'));
-// ---
+console.log(NewValObg(friend, 44, 'Alex'));
+console.log(NewValObg(person, 14, 'Fred'));
 
 // ```
 // Напиши функцію, яка приймає об'єкт та нову властивість "email" (якщо її немає).
@@ -324,7 +323,7 @@
 // ```
 
 // ---
-//!!!!!!!!!!!!!!!!!1
+
 // ```
 // Напиши функцію, яка приймає об'єкт і змінює тип значення властивості "age" з числа на рядок.
 // Поверни оновлений об'єкт.
@@ -337,22 +336,13 @@
 //   email: 'Nico@gmail.com',
 // };
 
-// const friend = {
-//   name: 'Anna',
-//   age: 23,
-//   job: 'SEO',
-//   address: 'Lviv',
-// };
-
 // function ageNoNum(obg) {
-//   obg.age =
+//   obg.age = String(obg.age);
 // }
+// ageNoNum(person);
 
-// console.log(ageNoNum(friend));
-// console.log(ageNoNum(person));
+// console.log(person);
 
-// ---
-//!!!!!!!!!!!!!!!!!
 // ```
 // Напиши функцію, яка приймає об'єкт і змінює значення властивості "address", але тільки якщо ця властивість вже існує.
 // Якщо її немає, поверни об'єкт без змін.

@@ -15,16 +15,16 @@
 
 // 1. Напиши функцію, яка приймає масив та виводить кожен елемент масиву у консоль.
 
-function logIterator(arr) {
-  for (let index = 0; index < arr.length; index++) {
-    const element = arr[index];
-  }
-  {
-    return element;
-  }
-}
+// function logIterator(arr) {
+//   for (let index = 0; index < arr.length; index++) {
+//     const element = arr[index];
+//   }
+//   {
+//     return element;
+//   }
+// }
 
-console.log(logIterator([1, 2, 3, 4, 5, 6]));
+// console.log(logIterator([1, 2, 3, 4, 5, 6]));
 
 // 1. Напиши функцію, яка приймає масив та виводить кожен парний елемент масиву у
 //    консоль.
@@ -40,11 +40,43 @@ console.log(logIterator([1, 2, 3, 4, 5, 6]));
 
 // 1. Напиши функцію, яка приймає масив чисел та виводить лише парні числа у
 //    консоль.
+
+// function dubleNum(array) {
+//   return array.filter(item => item % 2 === 0);
+// }
+
+// console.log(dubleNum([1, 2, 3, 4, 5, 6, 7, 8]));
+
 // 1. Напиши функцію, яка приймає два параметри (arr, max). Де arr - це масив
 //    чисел. Потрібно вивести лише ті елементи масиву які більші за max.
+
+// function maxNum(arr, max) {
+//   return arr.filter(item => item > max);
+// }
+
+// console.log(maxNum([1, 2, 3, 4, 5, 6, 7, 8], 4));
+
 // 1. Напиши функцію яка приймає масив та повертає суму всіх чисел у масиві.
+
+// const arrSum = arr => {
+//   return arr.reduce((acc, item) => {
+//     return (acc += item);
+//   }, 0);
+// };
+
+// console.log(arrSum([1, 2, 3, 4, 5, 6, 7, 8]));
+
 // 1. Напиши функцію яка приймає масив та елемент для пошуку. Фукнція повинна
 //    порахувати скільки разів шуканий елемент зустрічається у масиві.
+
+const searchElement = (arr, item) => {
+  return;
+};
+
+console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 7));
+console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 8));
+console.log(searchElement([1, 2, 2, 2, 2, 2, 5, 8, 8, 6, 7, 8], 2));
+
 // 1. Напиши функцію яка приймає масив чисел. Функція повинна видалити усі
 //    негативні(відємні числа) з масиву та повернути новий масив.
 // 1. Напиши функцію яка приймає масив рядочків. Потрібно змінити кожен елемент

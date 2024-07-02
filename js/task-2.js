@@ -317,8 +317,34 @@
 // console.log(battarey(true));
 // Задача-22
 // Напишіть функцію, яка приймає два параметри: isStudent (булевий) та hasID (булевий). Якщо ви студент і маєте посвідчення, поверніть "Вхід дозволено", якщо ні, поверніть "Вхід заборонено".
+
+// function noEntry(isStudent, hasID) {
+//   if (isStudent && hasID) {
+//     return 'Вхід дозволено';
+//   } else {
+//     return 'Вхід заборонено';
+//   }
+// }
+// console.log(noEntry(true, false));
+// console.log(noEntry(true, true));
+// console.log(noEntry(false, true));
+// console.log(noEntry(false, false));
+
 // Задача-23
 // Напишіть функцію, яка приймає два параметри: temperature та isRaining. Якщо температура менша за 0 або йде дощ, поверніть "Потрібно носити теплий одяг", в іншому випадку поверніть "Легка одяг".
+
+// function ClothesForToday(temperature, isRaining) {
+//   if (temperature < 0 || isRaining === true) {
+//     return 'Потрібно носити теплий одяг';
+//   } else {
+//     return 'Легка одяг';
+//   }
+// }
+// console.log(ClothesForToday(7, false));
+// console.log(ClothesForToday(5, true));
+// console.log(ClothesForToday(-7, true));
+// console.log(ClothesForToday(-9, false));
+
 // Задача-24
 // Напишіть функцію, яка приймає два параметри: hasCar (булевий) та hasLicense (булевий). Якщо у вас є автомобіль та водійські права, поверніть "Можете водити машину", якщо ні, поверніть "Водити заборонено".
 // Задача-25
