@@ -70,15 +70,15 @@
 //    порахувати скільки разів шуканий елемент зустрічається у масиві.
 
 //!!!!!!!!!!
-//   return tags.reduce((acc, tag) => {
-//     return { ...acc, [tag]: acc[tag] ? acc[tag] + 1 : 1 };
-//   }, {});
-// }
+  return tags.reduce((acc, tag) => {
+    return { [tag]: acc[tag] ? acc[tag] + 1 : 1 };
+  }, {});
+}
 
-// const searchElement = (arr, element) => {
-//   return arr.reduce((acc, item) => { return { ...acc, item ? item + 1: 1 };
-// }
-// ;
+const searchElement = (arr, element) => {
+  return arr.reduce((acc, item) => { return { ...acc, item ? item + 1: 1 };
+}
+;
 
 // console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 7));
 // console.log(searchElement([1, 2, 3, 2, 3, 4, 5, 8, 8, 6, 7, 8], 8));

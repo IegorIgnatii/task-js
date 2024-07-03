@@ -97,24 +97,7 @@
 
 // ---
 // ```
-//!!!!!!
-// ```
-// Напиши функцію, яка приймає об'єкт і додає до нього нову властивість "address" (рядок).
-// Поверни оновлений об'єкт.
 
-// const obg = {
-//   name: 'Nico',
-//   age: 33,
-//   job: 'developer',
-// };
-
-// function newObg(obg) {
-//   obg.address = 'Google';
-//   return obg;
-// }
-
-// console.log(newObg);
-//!!!!!!!!
 // ---
 
 // ```
@@ -224,26 +207,25 @@
 // Якщо у об'єктів є однакові властивості, значення другого об'єкта мають замінити значення першого.
 // Поверни результат.
 
-// const person = {
-//   name: 'Nico',
-//   age: 33,
-//   job: 'developer',
-// };
+const person = {
+  name: 'Nico',
+  age: 33,
+  job: 'developer',
+};
 
-// const friend = {
-//   name: 'Anna',
-//   age: 23,
-//   job: 'SEO',
-//   address: 'Lviv',
-// };
+const friend = {
+  name: 'Anna',
+  age: 23,
+  job: 'SEO',
+  address: 'Lviv',
+};
 
-// function comObg(obg1, obg2) {
-//   const bigobg = {};
+function comObg(obg1, obg2) {
+  const bigobg = { ...obg1, obg2 };
+}
 
-// }
-
-// console.log(comObg(friend, person));
-// console.log(comObg(person, friend));
+console.log(comObg(friend, person));
+console.log(comObg(person, friend));
 
 // ```
 
@@ -267,27 +249,27 @@
 // Напиши функцію, яка приймає об'єкт та нові значення для імені та віку. Функція повинна змінити обидві властивості в об'єкті. Поверни оновлений об'єкт.
 // ```
 
-const person = {
-  name: 'Nico',
-  age: 33,
-  job: 'developer',
-};
+// const person = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
 
-const friend = {
-  name: 'Anna',
-  age: 23,
-  job: 'SEO',
-  address: 'Lviv',
-};
+// const friend = {
+//   name: 'Anna',
+//   age: 23,
+//   job: 'SEO',
+//   address: 'Lviv',
+// };
 
-function NewValObg(obg, newAge, newName) {
-  obg.name = newName;
-  obg.age = newAge;
-  return obg;
-}
+// function NewValObg(obg, newAge, newName) {
+//   obg.name = newName;
+//   obg.age = newAge;
+//   return obg;
+// }
 
-console.log(NewValObg(friend, 44, 'Alex'));
-console.log(NewValObg(person, 14, 'Fred'));
+// console.log(NewValObg(friend, 44, 'Alex'));
+// console.log(NewValObg(person, 14, 'Fred'));
 
 // ```
 // Напиши функцію, яка приймає об'єкт та нову властивість "email" (якщо її немає).
@@ -542,3 +524,22 @@ console.log(NewValObg(person, 14, 'Fred'));
 //   getTransactionTotal(type) {},
 // };
 // ```
+
+//!!!!!!
+// ```
+// Напиши функцію, яка приймає об'єкт і додає до нього нову властивість "address" (рядок).
+// Поверни оновлений об'єкт.
+
+// const obg = {
+//   name: 'Nico',
+//   age: 33,
+//   job: 'developer',
+// };
+
+// function newObg(obg) {
+//   obg.address = 'Google';
+//   return obg;
+// }
+
+// console.log(newObg);
+//!!!!!!!!
